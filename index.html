@@ -21,19 +21,22 @@
             <img src="./assets/coffee-breaks.png" alt="Logo Matcha">
         </div>
 
-        <button class="button__menu">Abrir</button>
+        <button id="btnAbrir" class="button__menu button--abrir"></button>
 
-        <ul class="navbar__menu">
-            <li><a href="#">Platform</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-
-        <div class="navbar__buttons">
-            <button>Sign in</button>
-            <button>Start Free</button>
+        <div id="nav" class="navbar__menu p-lateral">
+            <button id="btnCerrar" class="button__menu button--cerrar">Cerrar</button>
+            <ul class="navbar__list">
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+    
+            <div class="navbar__buttons">
+                <button class="button__signIn">Sign in</button>
+                <button class="button__start">Start Free</button>
+            </div>
         </div>
     </nav>
 
