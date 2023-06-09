@@ -1,0 +1,6 @@
+.container-description {
+    display: grid;
+    gap: 1.8rem;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
