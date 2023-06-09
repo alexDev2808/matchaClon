@@ -8,6 +8,7 @@
     --text-color: #46484c;
     --text-shadow: #a3a2a2;
     --text-white: #fff;
+    --text-green: #28a745;
     --font-title: 3.5rem;
     --font-subtitle: 2.8rem;
     --font-text: 1.6rem;
@@ -30,7 +31,7 @@ html {
 
 /* Utilerias */
 .p-lateral {
-    padding: 0 22px;
+    padding: 28px 22px;
 }
 video[poster] {
     width: 100%;
@@ -70,6 +71,12 @@ video[poster] {
     cursor: pointer;
     transition: all ease 0.2s;
 }
+.inputs__email button span {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background-image: url('../assets/arrow-right-white.svg');
+}
 .inputs__email button:hover {
     box-shadow: 6px 6px 0px var(--dark-color);
     transform: translateY(-2px);
@@ -77,6 +84,28 @@ video[poster] {
 
 /* Inputs Fin ^ */
 
+/* card */
+.card {
+    max-width: 560px;
+    padding: 1.6rem 2rem;
+    margin: 3.2rem auto;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+}
+.card--button {
+    display: inline-block;
+    font-size: var(--font-text);
+    color: var(--text-green);
+    text-decoration: none;
+    margin-top: 2.8rem;
+}
+.card--button span {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    background-image: url('../assets/arrow-right.svg');
+}
 /* Navbar */
 .navbar {
     display: none;
@@ -87,7 +116,7 @@ video[poster] {
     width: 100%;
     max-width: 1400px;
     min-height: 380px;
-    margin: 3.2rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -99,6 +128,7 @@ video[poster] {
 }
 .header__description {
     font-size: var(--font-text);
+    text-align: center;
 }
 .header__texts {
     font-size: var(--font-text-small);
@@ -116,7 +146,7 @@ video[poster] {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    margin-bottom: 3.2rem;
 }
 .container-description__video {
     max-width: 768px;
@@ -146,4 +176,18 @@ video[poster] {
 }
 .container-description__article p:nth-child(3) {
     color: var(--text-shadow);
+}
+
+
+/* Container cards */
+.container-cards {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.article__card--title {
+    font-size: var(--font-cards);
+    margin-bottom: 1.8rem;
+}
+.article__card--desc {
+    font-size: var(--font-text);
 }
