@@ -1,5 +1,5 @@
 :root {
-    --body-color: ##fffbf7;;
+    --body-color: #fffbf7;;
     --primary-color: #025157;
     --secondary-color: #a1d683;
     --white-color: #fff;
@@ -124,6 +124,8 @@ video[poster] {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 22px;
+    position: fixed;
+    box-shadow: 1px 2px 5px var(--text-shadow);
 }
 .navbar__logo{
     width: 15rem;
@@ -159,7 +161,7 @@ video[poster] {
 }
 .navbar__menu {
     width: 28rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -220,6 +222,7 @@ video[poster] {
     width: 100%;
     max-width: 1400px;
     min-height: 380px;
+    padding-top: 7.8rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -306,4 +309,120 @@ video[poster] {
 }
 .article__card--desc {
     font-size: var(--font-text);
+}
+
+/* Section sliders */
+
+.section-sliders {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+.section-sliders__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.3rem;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+}
+.slider-container__texts {
+    margin-bottom: 3.2rem;
+    color: var(--dark-color);
+}
+.slider-container__texts h3 {
+    color: var(--primary-color);
+    font-size: var(--font-subtitle);
+}
+.slider-container__texts p {
+    font-size: var(--font-text);
+    margin: 3.2rem 0;
+}
+.slider-container__texts a {
+    padding: 1.5rem 1.8rem;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    font-size: var(--font-text);
+    border-radius: 5px;
+}
+
+.container--sliders {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slider-frame {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+
+}
+.card--slider {
+    width: calc(100% / 2);
+}
+.card--slider .card {
+    border: 1px solid var(--primary-color);
+}
+.slider__article {
+    width: 100%;
+    min-height: 38rem;
+}
+.slider__article h6 {
+    color: var(--primary-color);
+    font-size: var(--font-text-small);
+}
+.slider__article h3 {
+    font-size: var(--font-subtitle);
+    line-height: 1.2;
+}
+.slider__article p {
+    margin-top: 40%;
+    font-size: var(--font-text-small);
+}
+
+.puntos {
+    width: 100%;
+    padding: 1.3rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.puntos .punto {
+    list-style: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--gray-color);
+    margin: 1rem;
+}
+.puntos .punto.activo {
+    background-color: var(--primary-color);
+}
+
+.flecha {
+    position: absolute;
+    bottom: 50%;
+    width: 3rem;
+    height: 3rem;
+
+}
+.flecha-izquierda {
+    left: 0.2rem;
+    background-image: url(../assets/chevron-double-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.flecha-derecha {
+    right: 0.2rem;
+    background-image: url(../assets/chevron-double-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }

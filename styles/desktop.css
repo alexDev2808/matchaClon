@@ -4,3 +4,9 @@
     grid-auto-rows: min-content;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 }
+.slider-container__texts h3{
+    font-size: 4rem;
+}
+.section-sliders__container {
+    grid-template-columns: 3fr 2fr;
+}
